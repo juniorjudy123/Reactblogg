@@ -10,7 +10,7 @@ import { Routes, Route } from "react-router-dom";
 
 
 function App() {
-  const user = false
+  const user = true
 
   return (
     <> <Navbar />
@@ -20,9 +20,10 @@ function App() {
         <Route path="/settings" element={user ? <Settings /> : <Register />} />
         <Route path="/login" element={user ? <Home /> : <Login />} />
         <Route path="/register" element={user ? <Home /> : <Register />} />
+
         <Route path="/post/:postId" element={<Single />} />
 
-      </Routes>
+      </Routes >
 
 
     </>

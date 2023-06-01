@@ -1,42 +1,34 @@
 import "./postStyles.css"
-import { Link } from "react-router-dom"
 
-export default function Post() {
+export default function Post({ post }) {
 	return (
 		<div className="post">
 			<img
 				className="PostImg"
-				src="https://images.pexels.com/photos/1420440/pexels-photo-1420440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-				alt="headerImg"
+				src="https://pbs.twimg.com/media/Fg0z1uIXgAAzsmw.jpg"
+				alt="PostedImg"
 			></img>
+
 			<div className="postInfo">
 				<div className="PostCatgs">
-					<span className="postCatg">Music</span>
-					<span className="postCatg">Life</span>
+					<span className="postcats">music</span>
+					<span className="postcats">Life</span>
 				</div>
+
 				<span className="postTitle">
-					<Link className="link" to="/post/:postId">
-						Lorem ipsum, dolor sit amet
-					</Link>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit.
 				</span>
+
 				<hr />
 				<span className="postDate">1hour ago</span>
 			</div>
-			<p className="postDescpt">
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
-				excepturi illo aliquam voluptate sint necessitatibus accusantium
-				corrupti impedit obcaecati consequatur quibusdam dolorem dolore nemo
-				aperiam fugit ad, harum eos repellat.Lorem ipsum dolor sit amet
-				consectetur adipisicing elit. Tempore excepturi illo aliquam voluptate
-				sint necessitatibus accusantium corrupti impedit obcaecati consequatur
-				quibusdam dolorem dolore nemo aperiam fugit ad, harum eos repellatLorem
-				ipsum dolor sit amet consectetur adipisicing elit. Tempore excepturi
-				illo aliquam voluptate sint necessitatibus accusantium corrupti impedit
-				obcaecati consequatur quibusdam dolorem dolore nemo aperiam fugit ad,
-				harum eos repellatLorem ipsum dolor sit amet consectetur adipisicing
-				elit. Tempore excepturi illo aliquam voluptate sint necessitatibus
-				accusantium corrupti impedit obcaecati consequatur quibusdam dolorem
-				dolore nemo aperiam fugit ad, harum eos repellat
+			<p className="postDesc">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
+				necessitatibus nesciunt quidem culpa fugit? Deserunt animi vero culpa
+				quia corrupti sed nostrum voluptas ipsam eos quidem? Quaerat cumque
+				iusto quos! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+				Expedita necessitatibus nesciunt quidem culpa fugit? Deserunt animi vero
+				culpa quia corrupti sed nostrum voluptas ipsam eos quidem?
 			</p>
 		</div>
 	)
