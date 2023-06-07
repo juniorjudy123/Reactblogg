@@ -6,11 +6,13 @@ import Register from "./Pages/register/Register";
 import Home from "./Pages/Home/Home"
 import Single from "./Pages/single/Single"
 import { Routes, Route } from "react-router-dom";
+import { useContext } from "react";
+import { Context } from "./context/context";
 
 
 
 function App() {
-  const user = true
+  const { user } = useContext(Context)
 
   return (
     <> <Navbar />
