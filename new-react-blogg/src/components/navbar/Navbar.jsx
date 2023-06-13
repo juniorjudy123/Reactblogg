@@ -4,7 +4,12 @@ import { Link } from "react-router-dom"
 import { Context } from "../../context/context"
 
 export default function Navbar() {
-	const { user } = useContext(Context)
+	const { user, dispatch } = useContext(Context)
+
+	const handleLogout = () => {
+		dispatch({ type: "LOGOUT" })
+	}
+
 	return (
 		<div className="nav">
 			<div className="topLeftCorner">
@@ -35,7 +40,9 @@ export default function Navbar() {
 							Write
 						</Link>
 					</li>
-					<li className="TopCenterListItem">{user && "Logout "}</li>
+					<li className="TopCenterListItem" onClick={handleLogout}>
+						{user && "Logout "}
+					</li>
 				</ul>
 			</div>
 			<div className="topRightCorner">
